@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="26.333" tests="5" errors="0" skipped="0" failures="5">
+  <properties>
+    <property name="java.specification.version" value="19"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\TestGroup\Desktop\testing-app-automatizacion\target\test-classes;C:\Users\TestGroup\Desktop\testing-app-automatizacion\target\classes;C:\Users\TestGroup\.m2\repository\io\appium\java-client\8.6.0\java-client-8.6.0.jar;C:\Users\TestGroup\.m2\repository\org\seleniumhq\selenium\selenium-api\4.13.0\selenium-api-4.13.0.jar;C:\Users\TestGroup\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.13.0\selenium-remote-driver-4.13.0.jar;C:\Users\TestGroup\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\TestGroup\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\TestGroup\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\TestGroup\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\TestGroup\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\TestGroup\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\TestGroup\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\TestGroup\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\TestGroup\.m2\repository\io\netty\netty-buffer\4.1.96.Final\netty-buffer-4.1.96.Final.jar;C:\Users\TestGroup\.m2\repository\io\netty\netty-codec-http\4.1.96.Final\netty-codec-http-4.1.96.Final.jar;C:\Users\TestGroup\.m2\repository\io\netty\netty-codec\4.1.96.Final\netty-codec-4.1.96.Final.jar;C:\Users\TestGroup\.m2\repository\io\netty\netty-handler\4.1.96.Final\netty-handler-4.1.96.Final.jar;C:\Users\TestGroup\.m2\repository\io\netty\netty-common\4.1.96.Final\netty-common-4.1.96.Final.jar;C:\Users\TestGroup\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.96.Final\netty-transport-classes-epoll-4.1.96.Final.jar;C:\Users\TestGroup\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.96.Final\netty-transport-classes-kqueue-4.1.96.Final.jar;C:\Users\TestGroup\.m2\repository\io\netty\netty-transport-native-epoll\4.1.96.Final\netty-transport-native-epoll-4.1.96.Final.jar;C:\Users\TestGroup\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.96.Final\netty-transport-native-kqueue-4.1.96.Final.jar;C:\Users\TestGroup\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final.jar;C:\Users\TestGroup\.m2\repository\io\netty\netty-transport\4.1.96.Final\netty-transport-4.1.96.Final.jar;C:\Users\TestGroup\.m2\repository\io\netty\netty-resolver\4.1.96.Final\netty-resolver-4.1.96.Final.jar;C:\Users\TestGroup\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\TestGroup\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\TestGroup\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\TestGroup\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\TestGroup\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\TestGroup\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\TestGroup\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\TestGroup\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\TestGroup\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\TestGroup\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\TestGroup\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\TestGroup\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\TestGroup\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\TestGroup\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\TestGroup\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\TestGroup\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\TestGroup\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\TestGroup\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\TestGroup\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\TestGroup\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\TestGroup\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\TestGroup\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\TestGroup\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\TestGroup\.m2\repository\org\seleniumhq\selenium\selenium-http\4.13.0\selenium-http-4.13.0.jar;C:\Users\TestGroup\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\TestGroup\.m2\repository\org\seleniumhq\selenium\selenium-json\4.13.0\selenium-json-4.13.0.jar;C:\Users\TestGroup\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.13.0\selenium-manager-4.13.0.jar;C:\Users\TestGroup\.m2\repository\org\seleniumhq\selenium\selenium-os\4.13.0\selenium-os-4.13.0.jar;C:\Users\TestGroup\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\TestGroup\.m2\repository\org\seleniumhq\selenium\selenium-support\4.13.0\selenium-support-4.13.0.jar;C:\Users\TestGroup\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\TestGroup\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\TestGroup\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\TestGroup\.m2\repository\org\seleniumhq\selenium\selenium-java\4.8.3\selenium-java-4.8.3.jar;C:\Users\TestGroup\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.8.3\selenium-chrome-driver-4.8.3.jar;C:\Users\TestGroup\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\TestGroup\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\TestGroup\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.8.3\selenium-chromium-driver-4.8.3.jar;C:\Users\TestGroup\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v109\4.8.3\selenium-devtools-v109-4.8.3.jar;C:\Users\TestGroup\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v110\4.8.3\selenium-devtools-v110-4.8.3.jar;C:\Users\TestGroup\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v111\4.8.3\selenium-devtools-v111-4.8.3.jar;C:\Users\TestGroup\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.8.3\selenium-devtools-v85-4.8.3.jar;C:\Users\TestGroup\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.8.3\selenium-edge-driver-4.8.3.jar;C:\Users\TestGroup\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.8.3\selenium-firefox-driver-4.8.3.jar;C:\Users\TestGroup\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.8.3\selenium-ie-driver-4.8.3.jar;C:\Users\TestGroup\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.8.3\selenium-safari-driver-4.8.3.jar;C:\Users\TestGroup\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\TestGroup\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\TestGroup\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar;C:\Users\TestGroup\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\TestGroup\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\TestGroup\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\TestGroup\.m2\repository\net\sourceforge\jexcelapi\jxl\2.6.12\jxl-2.6.12.jar;C:\Users\TestGroup\.m2\repository\log4j\log4j\1.2.14\log4j-1.2.14.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="19"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CL"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-19\bin"/>
+    <property name="sun.java.command" value="C:\Users\TestGroup\AppData\Local\Temp\surefire17786207923848763451\surefirebooter-20240730130830270_3.jar C:\Users\TestGroup\AppData\Local\Temp\surefire17786207923848763451 2024-07-30T13-08-30_145-jvmRun1 surefire-20240730130830270_1tmp surefire_0-20240730130830270_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\TestGroup\Desktop\testing-app-automatizacion\target\test-classes;C:\Users\TestGroup\Desktop\testing-app-automatizacion\target\classes;C:\Users\TestGroup\.m2\repository\io\appium\java-client\8.6.0\java-client-8.6.0.jar;C:\Users\TestGroup\.m2\repository\org\seleniumhq\selenium\selenium-api\4.13.0\selenium-api-4.13.0.jar;C:\Users\TestGroup\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.13.0\selenium-remote-driver-4.13.0.jar;C:\Users\TestGroup\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\TestGroup\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\TestGroup\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\TestGroup\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\TestGroup\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\TestGroup\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\TestGroup\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\TestGroup\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\TestGroup\.m2\repository\io\netty\netty-buffer\4.1.96.Final\netty-buffer-4.1.96.Final.jar;C:\Users\TestGroup\.m2\repository\io\netty\netty-codec-http\4.1.96.Final\netty-codec-http-4.1.96.Final.jar;C:\Users\TestGroup\.m2\repository\io\netty\netty-codec\4.1.96.Final\netty-codec-4.1.96.Final.jar;C:\Users\TestGroup\.m2\repository\io\netty\netty-handler\4.1.96.Final\netty-handler-4.1.96.Final.jar;C:\Users\TestGroup\.m2\repository\io\netty\netty-common\4.1.96.Final\netty-common-4.1.96.Final.jar;C:\Users\TestGroup\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.96.Final\netty-transport-classes-epoll-4.1.96.Final.jar;C:\Users\TestGroup\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.96.Final\netty-transport-classes-kqueue-4.1.96.Final.jar;C:\Users\TestGroup\.m2\repository\io\netty\netty-transport-native-epoll\4.1.96.Final\netty-transport-native-epoll-4.1.96.Final.jar;C:\Users\TestGroup\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.96.Final\netty-transport-native-kqueue-4.1.96.Final.jar;C:\Users\TestGroup\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final.jar;C:\Users\TestGroup\.m2\repository\io\netty\netty-transport\4.1.96.Final\netty-transport-4.1.96.Final.jar;C:\Users\TestGroup\.m2\repository\io\netty\netty-resolver\4.1.96.Final\netty-resolver-4.1.96.Final.jar;C:\Users\TestGroup\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\TestGroup\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\TestGroup\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\TestGroup\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\TestGroup\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\TestGroup\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\TestGroup\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\TestGroup\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\TestGroup\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\TestGroup\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\TestGroup\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\TestGroup\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\TestGroup\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\TestGroup\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\TestGroup\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\TestGroup\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\TestGroup\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\TestGroup\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\TestGroup\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\TestGroup\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\TestGroup\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\TestGroup\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\TestGroup\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\TestGroup\.m2\repository\org\seleniumhq\selenium\selenium-http\4.13.0\selenium-http-4.13.0.jar;C:\Users\TestGroup\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\TestGroup\.m2\repository\org\seleniumhq\selenium\selenium-json\4.13.0\selenium-json-4.13.0.jar;C:\Users\TestGroup\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.13.0\selenium-manager-4.13.0.jar;C:\Users\TestGroup\.m2\repository\org\seleniumhq\selenium\selenium-os\4.13.0\selenium-os-4.13.0.jar;C:\Users\TestGroup\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\TestGroup\.m2\repository\org\seleniumhq\selenium\selenium-support\4.13.0\selenium-support-4.13.0.jar;C:\Users\TestGroup\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\TestGroup\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\TestGroup\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\TestGroup\.m2\repository\org\seleniumhq\selenium\selenium-java\4.8.3\selenium-java-4.8.3.jar;C:\Users\TestGroup\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.8.3\selenium-chrome-driver-4.8.3.jar;C:\Users\TestGroup\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\TestGroup\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\TestGroup\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.8.3\selenium-chromium-driver-4.8.3.jar;C:\Users\TestGroup\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v109\4.8.3\selenium-devtools-v109-4.8.3.jar;C:\Users\TestGroup\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v110\4.8.3\selenium-devtools-v110-4.8.3.jar;C:\Users\TestGroup\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v111\4.8.3\selenium-devtools-v111-4.8.3.jar;C:\Users\TestGroup\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.8.3\selenium-devtools-v85-4.8.3.jar;C:\Users\TestGroup\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.8.3\selenium-edge-driver-4.8.3.jar;C:\Users\TestGroup\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.8.3\selenium-firefox-driver-4.8.3.jar;C:\Users\TestGroup\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.8.3\selenium-ie-driver-4.8.3.jar;C:\Users\TestGroup\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.8.3\selenium-safari-driver-4.8.3.jar;C:\Users\TestGroup\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\TestGroup\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\TestGroup\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar;C:\Users\TestGroup\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\TestGroup\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\TestGroup\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\TestGroup\.m2\repository\net\sourceforge\jexcelapi\jxl\2.6.12\jxl-2.6.12.jar;C:\Users\TestGroup\.m2\repository\log4j\log4j\1.2.14\log4j-1.2.14.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\TestGroup"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-01-17"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-19"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\TestGroup\Desktop\testing-app-automatizacion"/>
+    <property name="style.color" value="always"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\TestGroup\AppData\Local\Temp\surefire17786207923848763451\surefirebooter-20240730130830270_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="19.0.2+7-44"/>
+    <property name="user.name" value="TestGroup"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\TestGroup\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\TESTGR~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="19.0.2"/>
+    <property name="user.dir" value="C:\Users\TestGroup\Desktop\testing-app-automatizacion"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-19\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/TestGroup/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.11.v20240426-1830/jre/bin/server;C:/Users/TestGroup/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.11.v20240426-1830/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk-19\bin;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\chromedriver_win64;C:\Program Files (x86)\Windows Application Driver;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Git\cmd;C:\Users\TestGroup\AppData\Local\Android\Sdk\platform-tools;C:\Users\TestGroup\AppData\Local\Android\Sdk\tools;C:\Users\TestGroup\AppData\Local\Android\Sdk\tools\bin;C:\Program Files\APKTool;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\Users\TestGroup\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\TestGroup\AppData\Local\Programs\Python\Python312\;C:\Users\TestGroup\AppData\Local\Programs\Python\Launcher\;C:\Users\TestGroup\AppData\Local\Microsoft\WindowsApps;C:\Users\TestGroup\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\TestGroup\AppData\Roaming\npm;C:\Users\TestGroup\eclipse\jee-2024-03\eclipse;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="19.0.2+7-44"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="63.0"/>
+  </properties>
+  <testcase name="login[Ionix test, Ion!x2024, Ion!x2024, ionixtest@ionix.cl](1)" classname="LoginTest" time="0.104">
+    <failure message="An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up&#10;Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Command: [616ef060-6a5f-433c-97bb-2ad0f2ea0bc1, findElement {using=xpath, value=//android.widget.EditText[@text=&quot;Username&quot;]}]&#10;Capabilities {appium:app: C:\Users\TestGroup\Desktop\..., appium:appPackage: com.appqa, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\TestGroup\Desktop\..., automationName: UIAutomator2, deviceName: emulator-5554, newCommandTimeout: 4000, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1344x2992, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 4000, appium:pixelRatio: 3, appium:platformVersion: 15, appium:statBarHeight: 151, appium:takesScreenshot: true, appium:viewportRect: {height: 2841, left: 0, top: 151, width: 1344}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}&#10;Session ID: 616ef060-6a5f-433c-97bb-2ad0f2ea0bc1" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: 
+An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [616ef060-6a5f-433c-97bb-2ad0f2ea0bc1, findElement {using=xpath, value=//android.widget.EditText[@text="Username"]}]
+Capabilities {appium:app: C:\Users\TestGroup\Desktop\..., appium:appPackage: com.appqa, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\TestGroup\Desktop\..., automationName: UIAutomator2, deviceName: emulator-5554, newCommandTimeout: 4000, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1344x2992, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 4000, appium:pixelRatio: 3, appium:platformVersion: 15, appium:statBarHeight: 151, appium:takesScreenshot: true, appium:viewportRect: {height: 2841, left: 0, top: 151, width: 1344}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 616ef060-6a5f-433c-97bb-2ad0f2ea0bc1
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at LoginTest.login(LoginTest.java:47)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[&amp#27;[38;5;112m[Appium]&amp#27;[0m Welcome to Appium v2.11.1
+&amp#27;[38;5;112m[Appium]&amp#27;[0m Non-default server args:
+&amp#27;[38;5;112m[Appium]&amp#27;[0m { basePath: &amp#27;[32m'/wd/hub/'&amp#27;[39m }
+&amp#27;[38;5;112m[Appium]&amp#27;[0m The autodetected Appium home path: C:\Users\TestGroup
+&amp#27;[38;5;112m[Appium]&amp#27;[0m Attempting to load driver uiautomator2...
+&amp#27;[38;5;112m[Appium]&amp#27;[0m Requiring driver at C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\build\index.js
+&amp#27;[38;5;112m[Appium]&amp#27;[0m AndroidUiautomator2Driver has been successfully loaded in 0.856s
+&amp#27;[38;5;112m[Appium]&amp#27;[0m Appium REST http interface listener started on http://0.0.0.0:4723/wd/hub
+&amp#27;[38;5;112m[Appium]&amp#27;[0m You can provide the following URLs in your client code to connect to this server:
+	http://192.168.100.113:4723/wd/hub
+	http://127.0.0.1:4723/wd/hub (only accessible from the same host)
+	http://172.21.160.1:4723/wd/hub
+&amp#27;[38;5;112m[Appium]&amp#27;[0m Available drivers:
+&amp#27;[38;5;112m[Appium]&amp#27;[0m   - uiautomator2@3.7.0 (automationName 'UiAutomator2')
+&amp#27;[38;5;112m[Appium]&amp#27;[0m No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
+&amp#27;[38;5;86m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/wd/hub/status&amp#27;[39m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;52m[AppiumDriver@0cbe]&amp#27;[0m Calling AppiumDriver.getStatus() with args: []
+&amp#27;[38;5;52m[AppiumDriver@0cbe]&amp#27;[0m Responding to client with driver.getStatus() result: {"ready":true,"message":"The server is ready to accept new connections","build":{"version":"2.11.1"}}
+&amp#27;[38;5;86m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /wd/hub/status &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m7 ms - 111&amp#27;[39m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;86m[HTTP]&amp#27;[0m Request idempotency key: bb08c564-389b-413a-94d0-cdf1da8d7b41
+&amp#27;[38;5;86m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/wd/hub/session&amp#27;[39m &amp#27;[90m{"capabilities":{"firstMatch":[{}],"alwaysMatch":{"appium:app":"C:\\Users\\TestGroup\\Desktop\\testing-app-automatizacion\\src\\main\\resources\\app-test-QA.apk","appium:automationName":"UIAutomator2","appium:deviceName":"emulator-5554","appium:newCommandTimeout":4000,"platformName":"ANDROID"}}}&amp#27;[39m
+&amp#27;[38;5;52m[AppiumDriver@0cbe]&amp#27;[0m Calling AppiumDriver.createSession() with args: [null,null,{"firstMatch":[{}],"alwaysMatch":{"appium:app":"C:\\Users\\TestGroup\\Desktop\\testing-app-automatizacion\\src\\main\\resources\\app-test-QA.apk","appium:automationName":"UIAutomator2","appium:deviceName":"emulator-5554","appium:newCommandTimeout":4000,"platformName":"ANDROID"}}]
+&amp#27;[38;5;52m[AppiumDriver@0cbe]&amp#27;[0m Event 'newSessionRequested' logged at 1722359315047 (13:08:35 GMT-0400 (hora de verano oriental))
+&amp#27;[38;5;112m[Appium]&amp#27;[0m Attempting to find matching driver for automationName 'UIAutomator2' and platformName 'ANDROID'
+&amp#27;[38;5;112m[Appium]&amp#27;[0m The 'uiautomator2' driver was installed and matched caps.
+&amp#27;[38;5;112m[Appium]&amp#27;[0m Will require it at C:\Users\TestGroup\node_modules\appium-uiautomator2-driver
+&amp#27;[38;5;112m[Appium]&amp#27;[0m Requiring driver at C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\build\index.js
+&amp#27;[38;5;52m[AppiumDriver@0cbe]&amp#27;[0m Appium v2.11.1 creating new AndroidUiautomator2Driver (v3.7.0) session
+&amp#27;[38;5;52m[AppiumDriver@0cbe]&amp#27;[0m Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+&amp#27;[38;5;52m[AppiumDriver@0cbe]&amp#27;[0m Appium's BaseDriver version is 9.11.1
+&amp#27;[38;5;52m[AppiumDriver@0cbe]&amp#27;[0m AndroidUiautomator2Driver's BaseDriver version is 9.10.3
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m undefined
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Creating session with W3C capabilities: {
+  "alwaysMatch": {
+    "platformName": "ANDROID",
+    "appium:app": "C:\\Users\\TestGroup\\Desktop\\testing-app-automatizacion\\src\\main\\resources\\app-test-QA.apk",
+    "appium:automationName": "UIAutomator2",
+    "appium:deviceName": "emulator-5554",
+    "appium:newCommandTimeout": 4000
+  },
+  "firstMatch": [
+    {}
+  ]
+}
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Session created with session id: 616ef060-6a5f-433c-97bb-2ad0f2ea0bc1
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Found 2 'build-tools' folders under 'C:\Users\TestGroup\AppData\Local\Android\Sdk' (newest first):
+&amp#27;[38;5;229m[ADB]&amp#27;[0m     C:\Users\TestGroup\AppData\Local\Android\Sdk\build-tools\35.0.0
+&amp#27;[38;5;229m[ADB]&amp#27;[0m     C:\Users\TestGroup\AppData\Local\Android\Sdk\build-tools\34.0.0
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Using 'adb.exe' from 'C:\Users\TestGroup\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Running 'C:\Users\TestGroup\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Retrieving device list
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Trying to find connected Android devices
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Getting connected devices
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Connected devices: [{"udid":"emulator-5554","state":"device"}]
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Using device: emulator-5554
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Using 'adb.exe' from 'C:\Users\TestGroup\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Running 'C:\Users\TestGroup\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Setting device id to emulator-5554
+&amp#27;[38;5;123m[BaseDriver]&amp#27;[0m Using local app 'C:\Users\TestGroup\Desktop\testing-app-automatizacion\src\main\resources\app-test-QA.apk'
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Checking whether app is actually present
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Running 'C:\Users\TestGroup\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Current device property 'ro.build.version.sdk': 35
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Getting device platform version
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Running 'C:\Users\TestGroup\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Current device property 'ro.build.version.release': 15
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Device API level: 35
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Relaxing hidden api policy
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Running 'C:\Users\TestGroup\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Parsing package and activity from app manifest
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Running 'C:\Users\TestGroup\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 wait-for-device'
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Running 'C:\Users\TestGroup\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell echo ping'
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Package name: 'com.appqa'
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Main activity name: 'com.appqa.MainActivity'
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Parsed package and activity are: com.appqa/com.appqa.MainActivity
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Pushing settings apk to the device...
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Getting package info for 'io.appium.settings'
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Running 'C:\Users\TestGroup\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+&amp#27;[38;5;229m[ADB]&amp#27;[0m The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('5.12.4' >= '5.12.4')
+&amp#27;[38;5;229m[ADB]&amp#27;[0m There is no need to install/upgrade 'C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\io.appium.settings\apks\settings_apk-debug.apk'
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Running 'C:\Users\TestGroup\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings'
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m io.appium.settings is already running. There is no need to reset its permissions.
+&amp#27;[38;5;160m[Logcat]&amp#27;[0m Starting logs capture with command: C:\\Users\\TestGroup\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 logcat -v threadtime
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Forwarding UiAutomator2 Server port 6790 to local port 8200
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Forwarding system: 8200 to device: 6790
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Running 'C:\Users\TestGroup\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 forward tcp:8200 tcp:6790'
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Getting package info for 'io.appium.uiautomator2.server'
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Running 'C:\Users\TestGroup\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Getting install status for io.appium.uiautomator2.server.test
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Checking app cert for C:\Users\TestGroup\Desktop\testing-app-automatizacion\src\main\resources\app-test-QA.apk
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Running 'C:\Users\TestGroup\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell cmd package list packages'
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Using 'apksigner.jar' from 'C:\Users\TestGroup\AppData\Local\Android\Sdk\build-tools\35.0.0\lib\apksigner.jar'
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Starting apksigner: 'C:\\Program Files\\Java\\jdk-19\\bin\\java.exe' -Xmx1024M -Xss1m -jar C:\\Users\\TestGroup\\AppData\\Local\\Android\\Sdk\\build-tools\\35.0.0\\lib\\apksigner.jar verify --print-certs C:\\Users\\TestGroup\\Desktop\\testing-app-automatizacion\\src\\main\\resources\\app-test-QA.apk
+&amp#27;[38;5;229m[ADB]&amp#27;[0m 'io.appium.uiautomator2.server.test' is installed
+&amp#27;[38;5;229m[ADB]&amp#27;[0m The version name of the installed 'io.appium.uiautomator2.server' is greater or equal to the application version name ('7.0.15' >= '7.0.15')
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Server packages status: [{"installState":"sameVersionInstalled","appPath":"C:\\Users\\TestGroup\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v7.0.15.apk","appId":"io.appium.uiautomator2.server"},{"installState":"sameVersionInstalled","appPath":"C:\\Users\\TestGroup\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-debug-androidTest.apk","appId":"io.appium.uiautomator2.server.test"}]
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Server packages are not going to be (re)installed
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Waiting up to 30000ms for services to be available
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Running 'C:\Users\TestGroup\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell pm list instrumentation'
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Got the following command chunks to execute: [["dumpsys","deviceidle","whitelist","+io.appium.settings",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server.test",";"]]
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Running 'C:\Users\TestGroup\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys deviceidle whitelist +io.appium.settings ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server.test ;'
+&amp#27;[38;5;229m[ADB]&amp#27;[0m apksigner stdout: Signer #1 certificate DN: CN=Android Debug, OU=Android, O=Unknown, L=Unknown, ST=Unknown, C=US
+Signer #1 certificate SHA-256 digest: fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c
+Signer #1 certificate SHA-1 digest: 5e8f16062ea3cd2c4a0d547876baa6f38cabf625
+Signer #1 certificate MD5 digest: 20f46148b72d8e5e5ca23d37a4f41490
+
+&amp#27;[38;5;229m[ADB]&amp#27;[0m 'C:\Users\TestGroup\Desktop\testing-app-automatizacion\src\main\resources\app-test-QA.apk' is signed with a non-default certificate
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Getting package info for 'com.appqa'
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Running 'C:\Users\TestGroup\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package com.appqa'
+&amp#27;[38;5;229m[ADB]&amp#27;[0m The version name of the installed 'com.appqa' is greater or equal to the application version name ('1.0.0' >= '1.0.0')
+&amp#27;[38;5;229m[ADB]&amp#27;[0m There is no need to install/upgrade 'C:\Users\TestGroup\Desktop\testing-app-automatizacion\src\main\resources\app-test-QA.apk'
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Performing fast reset on 'com.appqa'
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Getting install status for com.appqa
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Running 'C:\Users\TestGroup\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell cmd package list packages'
+&amp#27;[38;5;229m[ADB]&amp#27;[0m 'com.appqa' is installed
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Running 'C:\Users\TestGroup\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell am force-stop com.appqa'
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Running 'C:\Users\TestGroup\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell pm clear com.appqa'
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Performed fast reset on the installed 'com.appqa' application (stop and clear)
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Performing shallow cleanup of automation leftovers
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m No obsolete sessions have been detected (timeout of 500ms exceeded)
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Running 'C:\Users\TestGroup\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell am force-stop io.appium.uiautomator2.server.test'
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Starting UIAutomator2 server 7.0.15
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Using UIAutomator2 server from 'C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v7.0.15.apk' and test from 'C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Waiting up to 30000ms for UiAutomator2 to be online...
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Creating ADB subprocess with args: ["-P","5037","-s","emulator-5554","shell","am","instrument","-w","-e","disableAnalytics","true","io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner"]
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Matched '/status' to command name 'getStatus'
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Got response with status 200: {"sessionId":"None","value":{"message":"UiAutomator2 Server is ready to accept commands","ready":true}}
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m The initialization of the instrumentation process took 2941ms
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Matched '/session' to command name 'createSession'
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Proxying [POST /session] to [POST http://127.0.0.1:8200/session] with body: {"capabilities":{"firstMatch":[{"platformName":"ANDROID","app":"C:\\Users\\TestGroup\\Desktop\\testing-app-automatizacion\\src\\main\\resources\\app-test-QA.apk","automationName":"UIAutomator2","deviceName":"emulator-5554","newCommandTimeout":4000,"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"ANDROID","app":"C:\\Users\\TestGroup\\Desktop\\testing-app-automatizacion\\src\\main\\resources\\app-test-QA.apk","automationName":"UIAutomator2","deviceName":"emulator-5554","newCommandTimeout":4000},"deviceUDID":"emulator-5554","appPackage":"com.appqa"}],"alwaysMatch":{}}}
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Got response with status 200: {"sessionId":"fe946b59-522f-4b13-850a-6fb3a53ee2f6","value":{"capabilities":{"firstMatch":[{"platformName":"ANDROID","app":"C:\\Users\\TestGroup\\Desktop\\testing-app-automatizacion\\src\\main\\resources\\app-test-QA.apk","automationName":"UIAutomator2","deviceName":"emulator-5554","newCommandTimeout":4000,"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"ANDROID","app":"C:\\Users\\TestGroup\\Desktop\\testing-app-automatizacion\\src\\main\\resources\\app-test-QA.apk","automationName":"UIAutomator2","deviceName":"emulator-5554","newCommandTimeout":4000},"deviceUDID":"emulator-5554","appPackage":"com.appqa"}],"alwaysMatch":{}},"sessionId":"fe946b59-522f-4b13-850a-6fb3a53ee2f6"}}
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Determined the downstream protocol as 'W3C'
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Proxying [GET /appium/device/pixel_ratio] to [GET http://127.0.0.1:8200/session/fe946b59-522f-4b13-850a-6fb3a53ee2f6/appium/device/pixel_ratio] with no body
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Matched '/appium/device/system_bars' to command name 'getSystemBars'
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Proxying [GET /appium/device/system_bars] to [GET http://127.0.0.1:8200/session/fe946b59-522f-4b13-850a-6fb3a53ee2f6/appium/device/system_bars] with no body
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Matched '/window/current/size' to command name 'getWindowSize'
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Proxying [GET /window/current/size] to [GET http://127.0.0.1:8200/session/fe946b59-522f-4b13-850a-6fb3a53ee2f6/window/current/size] with no body
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Proxying [GET /appium/device/info] to [GET http://127.0.0.1:8200/session/fe946b59-522f-4b13-850a-6fb3a53ee2f6/appium/device/info] with no body
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Running 'C:\Users\TestGroup\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys window'
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Running 'C:\Users\TestGroup\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys power'
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Got response with status 200: {"sessionId":"fe946b59-522f-4b13-850a-6fb3a53ee2f6","value":3}
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Got response with status 200: {"sessionId":"fe946b59-522f-4b13-850a-6fb3a53ee2f6","value":{"statusBar":151}}
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Got response with status 200: {"sessionId":"fe946b59-522f-4b13-850a-6fb3a53ee2f6","value":{"height":2992,"width":1344}}
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Got response with status 200: {"sessionId":"fe946b59-522f-4b13-850a-6fb3a53ee2f6","value":{"androidId":"7d9f017251aa9aa1","apiVersion":"35","bluetooth":{"state":"ON"},"brand":"google","carrierName":"T-Mobile","displayDensity":480,"locale":"en_US","manufacturer":"Google","model":"sdk_gphone64_x86_64","networks":[{"capabilities":{"SSID":null,"linkDownBandwidthKbps":4300,"linkUpstreamBandwidthKbps":1800,"networkCapabilities":"NET_CAPABILITY_MMS,NET_CAPABILITY_SUPL,NET_CAPABILITY_IA,NET_CAPABILITY_XCAP,NET_CAPABILITY_INTERNET,NET_CAPABILITY_NOT_RESTRICTED,NET_CAPABILITY_TRUSTED,NET_CAPABILITY_NOT_VPN,NET_CAPABILITY_VALIDATED,NET_CAPABILITY_NOT_ROAMING,NET_CAPABILITY_NOT_CONGESTED,NET_CAPABILITY_NOT_SUSPENDED","signalStrength":-2147483648,"transportTypes":"TRANSPORT_CELLULAR"},"detailedState":"CONNECTED","extraInfo":"fast.t-mobile.com","isAvailable":true,"isConnected":true,"isFailover":false,"isRoaming":false,"state":"CONNECTED","subtype":10,"subtypeName":"HSPA","type":0,"typeName":"MOBILE"},{"capabilities":{"SSID":null,"linkDownBandwidthKb...
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Screen already unlocked, doing nothing
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Starting 'com.appqa/com.appqa.MainActivity and waiting for 'com.appqa/com.appqa.MainActivity'
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Running 'C:\Users\TestGroup\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell am start -W -n com.appqa/com.appqa.MainActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Waiting up to 20000ms for activity matching pkg: 'com.appqa' and activity: 'com.appqa.MainActivity' to be focused
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Possible activities, to be checked: 'com.appqa.MainActivity', 'com.appqa.com.appqa.MainActivity'
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Getting focused package and activity
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Running 'C:\Users\TestGroup\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys window displays'
+&amp#27;[38;5;229m[ADB]&amp#27;[0m Found package: 'com.appqa' and fully qualified activity name : 'com.appqa.MainActivity'
+&amp#27;[38;5;52m[AppiumDriver@0cbe]&amp#27;[0m New AndroidUiautomator2Driver session created successfully, session 616ef060-6a5f-433c-97bb-2ad0f2ea0bc1 added to master session list
+&amp#27;[38;5;52m[AppiumDriver@0cbe]&amp#27;[0m Event 'newSessionStarted' logged at 1722359333824 (13:08:53 GMT-0400 (hora de verano oriental))
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Cached the protocol value 'W3C' for the new session 616ef060-6a5f-433c-97bb-2ad0f2ea0bc1
+&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Responding to client with driver.createSession() result: {"capabilities":{"platformName":"ANDROID","app":"C:\\Users\\TestGroup\\Desktop\\testing-app-automatizacion\\src\\main\\resources\\app-test-QA.apk","automationName":"UIAutomator2","deviceName":"emulator-5554","newCommandTimeout":4000,"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"ANDROID","app":"C:\\Users\\TestGroup\\Desktop\\testing-app-automatizacion\\src\\main\\resources\\app-test-QA.apk","automationName":"UIAutomator2","deviceName":"emulator-5554","newCommandTimeout":4000},"deviceUDID":"emulator-5554","appPackage":"com.appqa","pixelRatio":"3","statBarHeight":151,"viewportRect":{"left":0,"top":151,"width":1344,"height":2841},"deviceApiLevel":35,"platformVersion":"15","deviceManufacturer":"Google","deviceModel":"sdk_gphone64_x86_64","deviceScreenSize":"1344x2992","deviceScreenDensity":480}}
+&amp#27;[38;5;86m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /wd/hub/session &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m18779 ms - 1037&amp#27;[39m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;86m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/wd/hub/status&amp#27;[39m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;52m[AppiumDriver@0cbe]&amp#27;[0m Calling AppiumDriver.getStatus() with args: []
+&amp#27;[38;5;52m[AppiumDriver@0cbe]&amp#27;[0m Responding to client with driver.getStatus() result: {"ready":true,"message":"The server is ready to accept new connections","build":{"version":"2.11.1"}}
+&amp#27;[38;5;86m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /wd/hub/status &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m2 ms - 111&amp#27;[39m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;86m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/wd/hub/session/616ef060-6a5f-433c-97bb-2ad0f2ea0bc1/element&amp#27;[39m &amp#27;[90m{"using":"xpath","value":"//android.widget.EditText[@text=\"Username\"]"}&amp#27;[39m
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Calling AppiumDriver.findElement() with args: ["xpath","//android.widget.EditText[@text=\"Username\"]","616ef060-6a5f-433c-97bb-2ad0f2ea0bc1"]
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Waiting up to 0 ms for condition
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Matched '/element' to command name 'findElement'
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Proxying [POST /element] to [POST http://127.0.0.1:8200/session/fe946b59-522f-4b13-850a-6fb3a53ee2f6/element] with body: {"strategy":"xpath","selector":"//android.widget.EditText[@text=\"Username\"]","context":"","multiple":false}
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m socket hang up
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Encountered internal error running command: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+    at UIA2Proxy.command (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\@appium\base-driver\lib\jsonwp-proxy\proxy.js:355:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AndroidUiautomator2Driver.doFindElementOrEls (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\lib\commands\find.js:40:5)
+    at doFind (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:47:17)
+    at wrappedCondFn (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\@appium\base-driver\lib\basedriver\commands\timeout.ts:137:14)
+    at spin (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\asyncbox\lib\asyncbox.js:219:20)
+    at waitForCondition (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\asyncbox\lib\asyncbox.js:236:10)
+    at AndroidUiautomator2Driver.implicitWaitForCondition (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\@appium\base-driver\lib\basedriver\commands\timeout.ts:139:12)
+    at AndroidUiautomator2Driver.findElOrEls (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:70:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+    at AndroidUiautomator2Driver.findElement (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:75:12)
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;86m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /wd/hub/session/616ef060-6a5f-433c-97bb-2ad0f2ea0bc1/element &amp#27;[39m&amp#27;[31m500&amp#27;[39m &amp#27;[90m78 ms - 2140&amp#27;[39m &amp#27;[90m&amp#27;[39m
+]]></system-out>
+    <system-err><![CDATA[SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+log4j:WARN No appenders could be found for logger (io.netty.util.internal.logging.InternalLoggerFactory).
+log4j:WARN Please initialize the log4j system properly.
+]]></system-err>
+  </testcase>
+  <testcase name="testEmailValidation" classname="LoginTest" time="0.029">
+    <failure message="An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up&#10;Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Command: [616ef060-6a5f-433c-97bb-2ad0f2ea0bc1, findElement {using=xpath, value=//android.widget.EditText[@text=&quot;Username&quot;]}]&#10;Capabilities {appium:app: C:\Users\TestGroup\Desktop\..., appium:appPackage: com.appqa, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\TestGroup\Desktop\..., automationName: UIAutomator2, deviceName: emulator-5554, newCommandTimeout: 4000, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1344x2992, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 4000, appium:pixelRatio: 3, appium:platformVersion: 15, appium:statBarHeight: 151, appium:takesScreenshot: true, appium:viewportRect: {height: 2841, left: 0, top: 151, width: 1344}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}&#10;Session ID: 616ef060-6a5f-433c-97bb-2ad0f2ea0bc1" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: 
+An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [616ef060-6a5f-433c-97bb-2ad0f2ea0bc1, findElement {using=xpath, value=//android.widget.EditText[@text="Username"]}]
+Capabilities {appium:app: C:\Users\TestGroup\Desktop\..., appium:appPackage: com.appqa, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\TestGroup\Desktop\..., automationName: UIAutomator2, deviceName: emulator-5554, newCommandTimeout: 4000, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1344x2992, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 4000, appium:pixelRatio: 3, appium:platformVersion: 15, appium:statBarHeight: 151, appium:takesScreenshot: true, appium:viewportRect: {height: 2841, left: 0, top: 151, width: 1344}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 616ef060-6a5f-433c-97bb-2ad0f2ea0bc1
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at LoginTest.login(LoginTest.java:47)
+	at LoginTest.testEmailValidation(LoginTest.java:119)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;86m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/wd/hub/session/616ef060-6a5f-433c-97bb-2ad0f2ea0bc1/element&amp#27;[39m &amp#27;[90m{"using":"xpath","value":"//android.widget.EditText[@text=\"Username\"]"}&amp#27;[39m
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Calling AppiumDriver.findElement() with args: ["xpath","//android.widget.EditText[@text=\"Username\"]","616ef060-6a5f-433c-97bb-2ad0f2ea0bc1"]
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Waiting up to 0 ms for condition
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Matched '/element' to command name 'findElement'
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Proxying [POST /element] to [POST http://127.0.0.1:8200/session/fe946b59-522f-4b13-850a-6fb3a53ee2f6/element] with body: {"strategy":"xpath","selector":"//android.widget.EditText[@text=\"Username\"]","context":"","multiple":false}
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m socket hang up
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Encountered internal error running command: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+    at UIA2Proxy.command (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\@appium\base-driver\lib\jsonwp-proxy\proxy.js:355:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AndroidUiautomator2Driver.doFindElementOrEls (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\lib\commands\find.js:40:5)
+    at doFind (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:47:17)
+    at wrappedCondFn (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\@appium\base-driver\lib\basedriver\commands\timeout.ts:137:14)
+    at spin (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\asyncbox\lib\asyncbox.js:219:20)
+    at waitForCondition (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\asyncbox\lib\asyncbox.js:236:10)
+    at AndroidUiautomator2Driver.implicitWaitForCondition (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\@appium\base-driver\lib\basedriver\commands\timeout.ts:139:12)
+    at AndroidUiautomator2Driver.findElOrEls (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:70:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+    at AndroidUiautomator2Driver.findElement (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:75:12)
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;86m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /wd/hub/session/616ef060-6a5f-433c-97bb-2ad0f2ea0bc1/element &amp#27;[39m&amp#27;[31m500&amp#27;[39m &amp#27;[90m20 ms - 2140&amp#27;[39m &amp#27;[90m&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="testPasswordValidation" classname="LoginTest" time="0.031">
+    <failure message="An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up&#10;Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Command: [616ef060-6a5f-433c-97bb-2ad0f2ea0bc1, findElement {using=xpath, value=//android.widget.EditText[@text=&quot;Username&quot;]}]&#10;Capabilities {appium:app: C:\Users\TestGroup\Desktop\..., appium:appPackage: com.appqa, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\TestGroup\Desktop\..., automationName: UIAutomator2, deviceName: emulator-5554, newCommandTimeout: 4000, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1344x2992, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 4000, appium:pixelRatio: 3, appium:platformVersion: 15, appium:statBarHeight: 151, appium:takesScreenshot: true, appium:viewportRect: {height: 2841, left: 0, top: 151, width: 1344}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}&#10;Session ID: 616ef060-6a5f-433c-97bb-2ad0f2ea0bc1" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: 
+An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [616ef060-6a5f-433c-97bb-2ad0f2ea0bc1, findElement {using=xpath, value=//android.widget.EditText[@text="Username"]}]
+Capabilities {appium:app: C:\Users\TestGroup\Desktop\..., appium:appPackage: com.appqa, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\TestGroup\Desktop\..., automationName: UIAutomator2, deviceName: emulator-5554, newCommandTimeout: 4000, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1344x2992, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 4000, appium:pixelRatio: 3, appium:platformVersion: 15, appium:statBarHeight: 151, appium:takesScreenshot: true, appium:viewportRect: {height: 2841, left: 0, top: 151, width: 1344}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 616ef060-6a5f-433c-97bb-2ad0f2ea0bc1
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at LoginTest.login(LoginTest.java:47)
+	at LoginTest.testPasswordValidation(LoginTest.java:79)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;86m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/wd/hub/session/616ef060-6a5f-433c-97bb-2ad0f2ea0bc1/element&amp#27;[39m &amp#27;[90m{"using":"xpath","value":"//android.widget.EditText[@text=\"Username\"]"}&amp#27;[39m
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Calling AppiumDriver.findElement() with args: ["xpath","//android.widget.EditText[@text=\"Username\"]","616ef060-6a5f-433c-97bb-2ad0f2ea0bc1"]
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Waiting up to 0 ms for condition
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Matched '/element' to command name 'findElement'
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Proxying [POST /element] to [POST http://127.0.0.1:8200/session/fe946b59-522f-4b13-850a-6fb3a53ee2f6/element] with body: {"strategy":"xpath","selector":"//android.widget.EditText[@text=\"Username\"]","context":"","multiple":false}
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m socket hang up
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Encountered internal error running command: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+    at UIA2Proxy.command (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\@appium\base-driver\lib\jsonwp-proxy\proxy.js:355:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AndroidUiautomator2Driver.doFindElementOrEls (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\lib\commands\find.js:40:5)
+    at doFind (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:47:17)
+    at wrappedCondFn (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\@appium\base-driver\lib\basedriver\commands\timeout.ts:137:14)
+    at spin (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\asyncbox\lib\asyncbox.js:219:20)
+    at waitForCondition (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\asyncbox\lib\asyncbox.js:236:10)
+    at AndroidUiautomator2Driver.implicitWaitForCondition (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\@appium\base-driver\lib\basedriver\commands\timeout.ts:139:12)
+    at AndroidUiautomator2Driver.findElOrEls (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:70:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+    at AndroidUiautomator2Driver.findElement (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:75:12)
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;86m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /wd/hub/session/616ef060-6a5f-433c-97bb-2ad0f2ea0bc1/element &amp#27;[39m&amp#27;[31m500&amp#27;[39m &amp#27;[90m26 ms - 2140&amp#27;[39m &amp#27;[90m&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="testRepeatPasswordValidation" classname="LoginTest" time="0.037">
+    <failure message="An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up&#10;Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Command: [616ef060-6a5f-433c-97bb-2ad0f2ea0bc1, findElement {using=xpath, value=//android.widget.EditText[@text=&quot;Username&quot;]}]&#10;Capabilities {appium:app: C:\Users\TestGroup\Desktop\..., appium:appPackage: com.appqa, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\TestGroup\Desktop\..., automationName: UIAutomator2, deviceName: emulator-5554, newCommandTimeout: 4000, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1344x2992, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 4000, appium:pixelRatio: 3, appium:platformVersion: 15, appium:statBarHeight: 151, appium:takesScreenshot: true, appium:viewportRect: {height: 2841, left: 0, top: 151, width: 1344}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}&#10;Session ID: 616ef060-6a5f-433c-97bb-2ad0f2ea0bc1" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: 
+An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [616ef060-6a5f-433c-97bb-2ad0f2ea0bc1, findElement {using=xpath, value=//android.widget.EditText[@text="Username"]}]
+Capabilities {appium:app: C:\Users\TestGroup\Desktop\..., appium:appPackage: com.appqa, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\TestGroup\Desktop\..., automationName: UIAutomator2, deviceName: emulator-5554, newCommandTimeout: 4000, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1344x2992, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 4000, appium:pixelRatio: 3, appium:platformVersion: 15, appium:statBarHeight: 151, appium:takesScreenshot: true, appium:viewportRect: {height: 2841, left: 0, top: 151, width: 1344}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 616ef060-6a5f-433c-97bb-2ad0f2ea0bc1
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at LoginTest.login(LoginTest.java:47)
+	at LoginTest.testRepeatPasswordValidation(LoginTest.java:107)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;86m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/wd/hub/session/616ef060-6a5f-433c-97bb-2ad0f2ea0bc1/element&amp#27;[39m &amp#27;[90m{"using":"xpath","value":"//android.widget.EditText[@text=\"Username\"]"}&amp#27;[39m
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Calling AppiumDriver.findElement() with args: ["xpath","//android.widget.EditText[@text=\"Username\"]","616ef060-6a5f-433c-97bb-2ad0f2ea0bc1"]
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Waiting up to 0 ms for condition
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Matched '/element' to command name 'findElement'
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Proxying [POST /element] to [POST http://127.0.0.1:8200/session/fe946b59-522f-4b13-850a-6fb3a53ee2f6/element] with body: {"strategy":"xpath","selector":"//android.widget.EditText[@text=\"Username\"]","context":"","multiple":false}
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m socket hang up
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Encountered internal error running command: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+    at UIA2Proxy.command (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\@appium\base-driver\lib\jsonwp-proxy\proxy.js:355:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AndroidUiautomator2Driver.doFindElementOrEls (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\lib\commands\find.js:40:5)
+    at doFind (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:47:17)
+    at wrappedCondFn (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\@appium\base-driver\lib\basedriver\commands\timeout.ts:137:14)
+    at spin (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\asyncbox\lib\asyncbox.js:219:20)
+    at waitForCondition (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\asyncbox\lib\asyncbox.js:236:10)
+    at AndroidUiautomator2Driver.implicitWaitForCondition (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\@appium\base-driver\lib\basedriver\commands\timeout.ts:139:12)
+    at AndroidUiautomator2Driver.findElOrEls (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:70:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+    at AndroidUiautomator2Driver.findElement (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:75:12)
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;86m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /wd/hub/session/616ef060-6a5f-433c-97bb-2ad0f2ea0bc1/element &amp#27;[39m&amp#27;[31m500&amp#27;[39m &amp#27;[90m29 ms - 2140&amp#27;[39m &amp#27;[90m&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="testUsernameValidation" classname="LoginTest" time="0.024">
+    <failure message="An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up&#10;Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Command: [616ef060-6a5f-433c-97bb-2ad0f2ea0bc1, findElement {using=xpath, value=//android.widget.EditText[@text=&quot;Username&quot;]}]&#10;Capabilities {appium:app: C:\Users\TestGroup\Desktop\..., appium:appPackage: com.appqa, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\TestGroup\Desktop\..., automationName: UIAutomator2, deviceName: emulator-5554, newCommandTimeout: 4000, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1344x2992, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 4000, appium:pixelRatio: 3, appium:platformVersion: 15, appium:statBarHeight: 151, appium:takesScreenshot: true, appium:viewportRect: {height: 2841, left: 0, top: 151, width: 1344}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}&#10;Session ID: 616ef060-6a5f-433c-97bb-2ad0f2ea0bc1" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: 
+An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [616ef060-6a5f-433c-97bb-2ad0f2ea0bc1, findElement {using=xpath, value=//android.widget.EditText[@text="Username"]}]
+Capabilities {appium:app: C:\Users\TestGroup\Desktop\..., appium:appPackage: com.appqa, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\TestGroup\Desktop\..., automationName: UIAutomator2, deviceName: emulator-5554, newCommandTimeout: 4000, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1344x2992, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 4000, appium:pixelRatio: 3, appium:platformVersion: 15, appium:statBarHeight: 151, appium:takesScreenshot: true, appium:viewportRect: {height: 2841, left: 0, top: 151, width: 1344}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 616ef060-6a5f-433c-97bb-2ad0f2ea0bc1
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at LoginTest.login(LoginTest.java:47)
+	at LoginTest.testUsernameValidation(LoginTest.java:63)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;86m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/wd/hub/session/616ef060-6a5f-433c-97bb-2ad0f2ea0bc1/element&amp#27;[39m &amp#27;[90m{"using":"xpath","value":"//android.widget.EditText[@text=\"Username\"]"}&amp#27;[39m
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Calling AppiumDriver.findElement() with args: ["xpath","//android.widget.EditText[@text=\"Username\"]","616ef060-6a5f-433c-97bb-2ad0f2ea0bc1"]
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Waiting up to 0 ms for condition
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Matched '/element' to command name 'findElement'
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Proxying [POST /element] to [POST http://127.0.0.1:8200/session/fe946b59-522f-4b13-850a-6fb3a53ee2f6/element] with body: {"strategy":"xpath","selector":"//android.widget.EditText[@text=\"Username\"]","context":"","multiple":false}
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m socket hang up
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;-125m[AndroidUiautomator2Driver@a560]&amp#27;[0m Encountered internal error running command: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+    at UIA2Proxy.command (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\@appium\base-driver\lib\jsonwp-proxy\proxy.js:355:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AndroidUiautomator2Driver.doFindElementOrEls (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\lib\commands\find.js:40:5)
+    at doFind (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:47:17)
+    at wrappedCondFn (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\@appium\base-driver\lib\basedriver\commands\timeout.ts:137:14)
+    at spin (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\asyncbox\lib\asyncbox.js:219:20)
+    at waitForCondition (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\asyncbox\lib\asyncbox.js:236:10)
+    at AndroidUiautomator2Driver.implicitWaitForCondition (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\@appium\base-driver\lib\basedriver\commands\timeout.ts:139:12)
+    at AndroidUiautomator2Driver.findElOrEls (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:70:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+    at AndroidUiautomator2Driver.findElement (C:\Users\TestGroup\node_modules\appium-uiautomator2-driver\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:75:12)
+&amp#27;[38;5;42m[616ef060]&amp#27;[0m&amp#27;[38;5;86m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /wd/hub/session/616ef060-6a5f-433c-97bb-2ad0f2ea0bc1/element &amp#27;[39m&amp#27;[31m500&amp#27;[39m &amp#27;[90m16 ms - 2140&amp#27;[39m &amp#27;[90m&amp#27;[39m
+]]></system-out>
+  </testcase>
+</testsuite>

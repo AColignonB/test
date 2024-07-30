@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="LoginTest">
+        <methods>
+          <include name="globalTearDown"/>
+          <include name="afterTest"/>
+          <include name="testEmailValidation"/>
+          <include name="login" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="testRepeatPasswordValidation"/>
+          <include name="startAppiumServer"/>
+          <include name="testUsernameValidation"/>
+          <include name="testPasswordValidation"/>
+        </methods>
+      </class> <!-- LoginTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
